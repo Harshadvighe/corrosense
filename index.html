@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraSense AI - Structural Monitoring</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1>🏗️ InfraSense AI</h1>
+                <div class="header-subtitle">Real-Time Structural Health Monitoring System</div>
+            </div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>System Online</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Status Overview -->
+        <div class="status-card">
+            <div style="font-size: 0.9rem; color: #7f8c8d; margin-bottom: 15px; font-weight: 600;">CURRENT STATUS</div>
+            <div id="statusBadge" class="status-badge SAFE">SAFE</div>
+        </div>
+
+        <!-- Live Metrics -->
+        <div class="section-header">
+            <span class="section-icon">📊</span>
+            <h2>Live Monitoring</h2>
+        </div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Risk Score</div>
+                <div class="metric-value" id="riskScore">--</div>
+                <div class="metric-unit">Index</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Corrosion Level</div>
+                <div class="metric-value" id="corrosion">--</div>
+                <div class="metric-unit">%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Vibration</div>
+                <div class="metric-value" id="vibration">--</div>
+                <div class="metric-unit">Hz</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Temperature</div>
+                <div class="metric-value" id="temperature">--</div>
+                <div class="metric-unit">°C</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Humidity</div>
+                <div class="metric-value" id="humidity">--</div>
+                <div class="metric-unit">%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Resistivity</div>
+                <div class="metric-value" id="resistivity">--</div>
+                <div class="metric-unit">Ω·m</div>
+            </div>
+        </div>
+
+        <!-- Historical Trends -->
+        <div class="section-header">
+            <span class="section-icon">📈</span>
+            <h2>Historical Analysis</h2>
+        </div>
+        <div class="chart-container">
+            <div class="chart-header">
+                <div class="chart-title">Multi-Parameter Trend Analysis</div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #e74c3c;"></div>
+                        <span>Corrosion</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #3498db;"></div>
+                        <span>Vibration</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #f39c12;"></div>
+                        <span>Risk Score</span>
+                    </div>
+                </div>
+            </div>
+            <canvas id="multiChart"></canvas>
+        </div>
+
+        <!-- Weekly Insights -->
+        <div class="section-header">
+            <span class="section-icon">🔍</span>
+            <h2>Engineering Insights</h2>
+        </div>
+        <div class="insights-card">
+            <div class="insights-header">
+                <span>🤖</span>
+                <span>Daily Analysis Summary</span>
+            </div>
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <div class="insight-label">Average Corrosion</div>
+                    <div class="insight-value" id="avgCorrosion">--</div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-label">Maximum Corrosion</div>
+                    <div class="insight-value" id="maxCorrosion">--</div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-label">Average Vibration</div>
+                    <div class="insight-value" id="avgVibration">--</div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-label">Risk Assessment</div>
+                    <div class="insight-value" id="riskSummary">--</div>
+                </div>
+            </div>
+            <div class="recommendation-box">
+                <div class="recommendation-title">🔧 Inspection Recommendation</div>
+                <div id="recommendation">Analyzing structural data...</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div id="lastUpdate">Last Updated: --</div>
+                <div>Device: bridgePillar_01</div>
+            </div>
+            <div class="refresh-indicator">
+                <span class="refresh-icon">🔄</span>
+                <span>Auto-refresh: 5s</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
