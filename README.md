@@ -220,53 +220,6 @@ corrosense/
 
 ---
 
-## 👥 Team
-
-<div align="center">
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/THE-S0HAM">
-        <img src="https://github.com/THE-S0HAM.png" width="100px;" alt="THE-S0HAM"/>
-        <br /><sub><b>Soham Deshmukh</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=HV" width="100px;" alt="Harshad Vighe"/>
-        <br /><sub><b>Harshad Vighe</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=AB" width="100px;" alt="Anushka Bhor"/>
-        <br /><sub><b>Anushka Bhor</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=DS" width="100px;" alt="Divyanshu Singh"/>
-        <br /><sub><b>Divyanshu Singh</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=PP" width="100px;" alt="Pooja Pund"/>
-        <br /><sub><b>Pooja Pund</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=OP" width="100px;" alt="Om Pund"/>
-        <br /><sub><b>Om Pund</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
----
-
 ## 📄 License
 
 This project was developed for **DIPEX-2026**. All rights reserved.
